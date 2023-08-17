@@ -19,7 +19,9 @@ public class RestfulWebServicesApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 				.allowedMethods("*")
-				.allowedOrigins("https://todo-craft-xi.vercel.app/");
+				.allowedOrigins("https://todo-craft-xi.vercel.app/",
+						"https://todo-craft-xi.vercel.app/authenticate"
+						);
 			}
 		};
 	}
