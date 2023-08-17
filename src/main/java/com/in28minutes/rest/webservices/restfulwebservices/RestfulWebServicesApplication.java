@@ -19,6 +19,7 @@ public class RestfulWebServicesApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 				.allowedMethods("*")
+				.allowedHeaders("*")
 				.allowedOrigins("*");
 			}
 		};
