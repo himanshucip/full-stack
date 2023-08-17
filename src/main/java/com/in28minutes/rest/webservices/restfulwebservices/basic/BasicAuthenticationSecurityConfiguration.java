@@ -18,7 +18,7 @@ public class BasicAuthenticationSecurityConfiguration {
 		http
 			.authorizeHttpRequests(
 					auth -> auth
-							.antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+							.antMatchers(HttpMethod.OPTIONS, "/**").permitAll()  // solving preflight OPTIONS request error
 							.anyRequest().authenticated()
 					)
 			.httpBasic(Customizer.withDefaults())

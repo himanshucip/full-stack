@@ -24,6 +24,10 @@ public class TodoJpaResource2 {
 		this.todoRepository = todoRepository;
 	}
 
+	@GetMapping("/")
+	public String returnSomethingAtRootUrl() {
+		return "Congratulations";
+	}
 
 	@GetMapping("/users/{username}/todos")
 	public List<Todo> retrieveAllTodosForUsername(@PathVariable String username) {
