@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 //@Configuration
 public class BasicAuthenticationSecurityConfiguration {
 
-	@Bean
+	//@Bean
 	public SecurityFilterChain filterchain(HttpSecurity http)throws Exception {
 		
 	return	
